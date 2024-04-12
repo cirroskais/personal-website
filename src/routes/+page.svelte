@@ -1,1 +1,1 @@
-<h1 class="text-3xl font-bold underline">example page</h1>
+<h1 class="">hello world</h1>

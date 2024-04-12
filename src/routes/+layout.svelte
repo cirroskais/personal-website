@@ -1,14 +1,23 @@
 <script>
 	import '../app.css';
+
+	import { page } from '$app/stores';
+	import { fade } from 'svelte/transition';
+
+	import Header from '$lib/components/HeaderComponents/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<div class="h-screen grid grid-cols-16 grid-rows-12">
-	<div class="col-span-8 bg-red-100"></div>
-	<div class="row-span-12 col-span-2 bg-black/50"></div>
-	<div class="col-span-4">
-		<slot />
-	</div>
-	<div class="row-span-12 col-span-2 bg-black/50"></div>
+<div class="w-screen h-[3rem]">
+	<Header></Header>
 </div>
 
-<div class="w-screen bg-blue-100">footer shit</div>
+{#key $page.url}
+	<div in:fade class="container mx-auto py-2 min-h-[calc(100vh-7rem)]">
+		<slot />
+	</div>
+{/key}
+
+<div class="w-screen h-[4rem]">
+	<Footer></Footer>
+</div>
