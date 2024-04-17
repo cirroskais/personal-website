@@ -4,7 +4,7 @@
 
 <div class="shadow-lg bg-gray-500/10 h-full">
 	<div class="container flex h-full w-full">
-		<a href="/" class="font-bold text-xl my-auto tracking-wider">site name</a>
+		<a href="/" class="font-bold text-2xl my-auto tracking-wider"> cirroskais </a>
 		<div class="ml-auto flex space-x-4">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/projects">Projects</HeaderLink>
