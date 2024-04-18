@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
+	import { page } from '$app/stores';
 
 	import ListedPost from '$lib/components/Blog/ListedPost.svelte';
 	import First from '$lib/components/Icons/First.svelte';
@@ -23,7 +24,7 @@
 </script>
 
 <svelte:head>
-	<title>cirroskais/blog</title>
+	<title>{$page.data.discord?.username}/blog</title>
 </svelte:head>
 
 <div class="">

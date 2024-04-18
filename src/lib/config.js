@@ -1,8 +1,8 @@
 export default {
-	DISCORD: '000000000000000000',
-	LASTFM: 'lastfm',
-	BLUESKY: 'n',
-	TWITTER: 'dope',
-	FEDIVERSE: 'idfk',
-	NOSTR: 'forgot how that worked'
+	DISCORD: '223004006299992064',
+	LASTFM: 'RAAAAAAAAAAAH',
+	BLUESKY: 'cirroskais.xyz',
+	TWITTER: '@cirroskais',
+	FEDIVERSE: '@cirroskais@chadthundercock.com',
+	GITHUB: 'cirroskais'
 };

@@ -10,6 +10,12 @@
 
 <svelte:head>
 	<link href="https://chadthundercock.com/@cirroskais" rel="me" />
+	<link
+		rel="icon"
+		type="image/png"
+		href="https://cdn.discordapp.com/avatars/{$page.data.discord.id}/{$page.data.discord
+			.avatar}.png"
+	/>
 </svelte:head>
 
 <div class="w-screen h-[3rem]">

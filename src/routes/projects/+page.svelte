@@ -1,3 +1,7 @@
+<script>
+	import { page } from '$app/stores';
+</script>
+
 <svelte:head>
-	<title>cirroskais/projects</title>
+	<title>{$page.data.discord?.username}/projects</title>
 </svelte:head>
