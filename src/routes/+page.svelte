@@ -6,6 +6,8 @@
 	import Lastfm from '$lib/components/Icons/LastFM.svelte';
 	import GitHub from '$lib/components/Icons/GitHub.svelte';
 	import Mastodon from '$lib/components/Icons/Mastodon.svelte';
+	import X from '$lib/components/Icons/X.svelte';
+	import Bluesky from '$lib/components/Icons/Bluesky.svelte';
 </script>
 
 <svelte:head>
@@ -55,12 +57,22 @@
 						<Discord />
 					</div>
 				</a>
+				<a class="flex" href="https://x.com/{config.TWITTER}">
+					<div class="h-7 w-7 my-auto text-white/75">
+						<X />
+					</div>
+				</a>
+				<a class="flex" href="https://bsky.app/profile/{config.BLUESKY}">
+					<div class="h-7 w-7 my-auto text-white/75">
+						<Bluesky />
+					</div>
+				</a>
 			</div>
 
 			<div class="md:w-[42rem] p-2 bg-black/75 rounded-lg mt-1">
 				<div class="flex space-x-4">
 					<img
-						class="w-24 h-24 rounded-lg"
+						class="w-24 h-24"
 						src={$page.data.lastfm?.recenttracks?.track[0]?.image.find(
 							(_) => _.size == 'extralarge'
 						)?.['#text']}
