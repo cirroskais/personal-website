@@ -18,13 +18,9 @@
 	/>
 	<meta property="og:title" content={$page.data.discord.username} />
 	<meta property="og:url" content={$page.url.toString()} />
-	<meta
-		property="og:image"
-		content="https://cdn.discordapp.com/avatars/{$page.data.discord.id}/{$page.data.discord
-			.avatar}.png"
-	/>
+	<meta property="og:image" content="}$page.url.toString()}/background.jpg" />
 	<meta property="og:description" content="Full stack JavaScript developer." />
-	<meta name="theme-color" content="#ffffff" />
+	<meta name="theme-color" content="#fefefe" />
 </svelte:head>
 
 <div class="w-screen h-[3rem]">
