@@ -18,7 +18,7 @@
 	/>
 	<meta property="og:title" content={$page.data.discord.username} />
 	<meta property="og:url" content={$page.url.toString()} />
-	<meta property="og:image" content="{$page.url.toString()}/background.jpg" />
+	<meta property="og:image" content="{$page.url.toString()}background.jpg" />
 	<meta property="og:description" content="Full stack JavaScript developer." />
 	<meta name="theme-color" content="#fefefe" />
 </svelte:head>
