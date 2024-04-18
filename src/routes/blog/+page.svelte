@@ -3,8 +3,8 @@
 	import { writable } from 'svelte/store';
 
 	import ListedPost from '$lib/components/Blog/ListedPost.svelte';
-	import First from '$lib/components/icons/First.svelte';
-	import Last from '$lib/components/icons/Last.svelte';
+	import First from '$lib/components/Icons/First.svelte';
+	import Last from '$lib/components/Icons/Last.svelte';
 	import ScaffoldListedPost from '$lib/components/Blog/ScaffoldListedPost.svelte';
 
 	/**  @type {any[]} */
@@ -21,6 +21,10 @@
 
 	onMount(() => loadPosts(0));
 </script>
+
+<svelte:head>
+	<title>cirroskais/blog</title>
+</svelte:head>
 
 <div class="">
 	<div

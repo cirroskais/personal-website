@@ -160,6 +160,6 @@ export async function GET({ url }) {
 	return json({
 		index,
 		pages,
-		posts: posts.slice(0, 12)
+		posts: posts.slice(0, 0)
 	});
 }

@@ -8,6 +8,10 @@
 	import Footer from '$lib/components/Footer.svelte';
 </script>
 
+<svelte:head>
+	<link href="https://chadthundercock.com/@cirroskais" rel="me" />
+</svelte:head>
+
 <div class="w-screen h-[3rem]">
 	<Header></Header>
 </div>
