@@ -1,14 +1,18 @@
 <script>
-	// @ts-nocheck
-	// lol
-
 	import { onMount } from 'svelte';
 
-	export let src, href;
+	/** @type {string} src */
+	export let src;
+
+	/** @type {string=} href */
+	export let href;
+
+	/** @type {HTMLImageElement} e */
 	let e;
 
 	// https://github.com/nbitzz/newnewwebsite/blob/a751e690a9993923aabd1984d9645c502f148c69/src/components/buttons/Buttons.astro#L74-L95
 	onMount(() => {
+		/** @param {MouseEvent} ev */
 		let startEffect = (ev) => {
 			let yP = 1 - (ev.offsetY / 31) * 2;
 			let xP = -1 + (ev.offsetX / 88) * 2;
