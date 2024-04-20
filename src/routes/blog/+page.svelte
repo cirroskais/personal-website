@@ -29,7 +29,7 @@
 
 <div class="">
 	<div
-		class="grid md:grid-cols-2 md:grid-rows-5 lg:grid-cols-3 lg:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3 gap-2"
+		class="grid gap-2 md:grid-cols-2 md:grid-rows-5 lg:grid-cols-3 lg:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3"
 	>
 		{#each posts as post, i}
 			<ListedPost {post} index={i}></ListedPost>

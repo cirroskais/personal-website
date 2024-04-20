@@ -12,6 +12,11 @@
 	});
 </script>
 
-<a {href} class="my-auto text-lg transition-all {selected && 'font-bold tracking-wider'}">
+<a
+	{href}
+	class="my-auto text-lg transition-all {selected
+		? 'font-bold tracking-wider'
+		: 'hover:text-neutral-400'}"
+>
 	<slot />
 </a>

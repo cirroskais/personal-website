@@ -2,10 +2,10 @@
 	import HeaderLink from './HeaderLink.svelte';
 </script>
 
-<div class="shadow-lg bg-gray-500/10 h-full">
-	<div class="container flex h-full w-full">
-		<a href="/" class="font-bold text-2xl my-auto tracking-wider"> cirroskais </a>
-		<div class="ml-auto flex space-x-4">
+<div class="h-full shadow-lg bg-gray-500/10">
+	<div class="container flex w-full h-full">
+		<a href="/" class="my-auto text-2xl font-bold tracking-wider"> cirroskais </a>
+		<div class="flex ml-auto space-x-4">
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/projects">Projects</HeaderLink>
 			<HeaderLink href="/blog">Blog</HeaderLink>

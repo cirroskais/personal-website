@@ -4,7 +4,7 @@
 	import { page } from '$app/stores';
 	import { fade } from 'svelte/transition';
 
-	import Header from '$lib/components/HeaderComponents/Header.svelte';
+	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 </script>
 
@@ -33,6 +33,6 @@
 	</div>
 {/key}
 
-<div class="w-screen h-[4rem]">
+<div class="w-screen">
 	<Footer></Footer>
 </div>
