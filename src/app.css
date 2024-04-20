@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +8,10 @@ html,
 body {
 	background-color: #171717;
 	color: white;
+	font-family: 'Nunito', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .hero {
@@ -21,11 +27,6 @@ body {
 }
 
 a {
-	@apply hover:text-neutral-400;
-	@apply transition-colors;
-}
-
-a > div {
 	@apply hover:text-neutral-400;
 	@apply transition-colors;
 }

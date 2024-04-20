@@ -28,7 +28,7 @@
 </div>
 
 {#key $page.url}
-	<div in:fade class="container mx-auto py-2 min-h-[calc(100vh-7rem)]">
+	<div in:fade class="container flex mx-auto py-2 min-h-[calc(100vh-3rem)]">
 		<slot />
 	</div>
 {/key}
