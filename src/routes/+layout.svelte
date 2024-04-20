@@ -19,7 +19,7 @@
 	<meta property="og:title" content={$page.data.discord.username} />
 	<meta property="og:url" content={$page.url.toString()} />
 	<meta property="og:image" content="{$page.url.toString()}background.jpg" />
-	<meta property="og:description" content="Full stack JavaScript developer." />
+	<meta property="og:description" content="meow" />
 	<meta name="theme-color" content="#fefefe" />
 </svelte:head>
 
@@ -28,7 +28,7 @@
 </div>
 
 {#key $page.url}
-	<div in:fade class="container flex mx-auto py-2 min-h-[calc(100vh-3rem)]">
+	<div in:fade class="container mx-auto py-2 min-h-[calc(100vh-3rem)]">
 		<slot />
 	</div>
 {/key}

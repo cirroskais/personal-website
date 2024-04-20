@@ -16,7 +16,7 @@
 	<title>{$page.data.discord?.username}/home</title>
 </svelte:head>
 
-<div class="hero w-full h-[50rem] rounded-lg mx-auto my-auto">
+<div class="hero w-full h-[54rem] rounded-lg mx-auto my-auto">
 	<div class="h-full rounded-lg p-4 md:flex">
 		<div class="md:w-fit md:mx-auto my-auto min-h-max">
 			<div class="flex md:w-[42rem] p-2 bg-black/75 rounded-lg">
@@ -87,7 +87,8 @@
 			</div>
 
 			<div class="md:w-[42rem] p-2 bg-black/75 rounded-lg mt-1 flex justify-center flex-wrap gap-1">
-				<ImgButton href="https://cirroskais.xyz" src="/cirro-button.png"></ImgButton>
+				<ImgButton href="https://cirroskais.xyz" src="/buttons/cirro.png"></ImgButton>
+				<ImgButton href="https://split.pet" src="/buttons/split.png"></ImgButton>
 			</div>
 		</div>
 	</div>
