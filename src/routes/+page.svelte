@@ -26,7 +26,7 @@
 						.avatar}.png"
 					alt="{$page.data.discord?.username}'s profile picture"
 				/>
-				<p class="text-xl md:text-4xl text-neutral-300 my-auto">
+				<p class="text-3xl md:text-4xl text-neutral-300 my-auto">
 					{$page.data.discord?.username}
 				</p>
 			</div>
