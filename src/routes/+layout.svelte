@@ -37,6 +37,6 @@
 	</div>
 {/key}
 
-<div class="hidden mt-4 w-screen md:block">
+<div class="mt-4 w-screen">
 	<Footer></Footer>
 </div>

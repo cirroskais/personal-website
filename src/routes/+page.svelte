@@ -82,17 +82,17 @@
 			<div class="md:w-[42rem] p-2 bg-black/75 rounded-lg mt-1 shadow-lg">
 				<div class="flex space-x-2.5">
 					<Image
-						style="w-24 h-24"
+						style="w-16 h-16 md:w-24 md:h-24"
 						src={$page.data.lastfm.recenttracks.track[0].image.find(
 							(_) => _.size == 'extralarge'
 						)?.['#text']}
 						alt="Album art for {$page.data.lastfm?.recenttracks?.track[0]?.name}"
 					/>
 					<div class="overflow-x-auto my-auto">
-						<p class="text-2xl whitespace-nowrap text-neutral-300">
+						<p class="text-lg whitespace-nowrap md:text-2xl text-neutral-300">
 							{$page.data.lastfm?.recenttracks?.track[0]?.name}
 						</p>
-						<p class="text-xl text-neutral-500">
+						<p class="md:text-xl text-neutral-500">
 							{$page.data.lastfm?.recenttracks?.track[0]?.artist?.['#text']}
 						</p>
 					</div>
