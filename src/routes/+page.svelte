@@ -35,33 +35,45 @@
 			<div
 				class="md:w-[42rem] flex place-content-center space-x-2 text-xl p-2 bg-black/75 rounded-lg mt-1"
 			>
-				<a class="flex" href="https://www.last.fm/user/{config.LASTFM}">
-					<div class="my-auto w-7 h-7 transition-colors text-neutral-400 hover:text-red-500">
+				<a class="flex group" href="https://www.last.fm/user/{config.LASTFM}">
+					<div
+						class="my-auto w-7 h-7 transition-colors text-neutral-400 group-focus:text-red-500 group-hover:text-red-500"
+					>
 						<Lastfm />
 					</div>
 				</a>
-				<a class="flex" href="https://github.com/{config.GITHUB}">
-					<div class="my-auto w-7 h-7 transition-colors text-neutral-400 hover:text-black">
+				<a class="flex group" href="https://github.com/{config.GITHUB}">
+					<div
+						class="my-auto w-7 h-7 transition-colors text-neutral-400 group-hover:text-black group-focus:text-black"
+					>
 						<GitHub />
 					</div>
 				</a>
-				<a class="flex" href="https://mastodon.social/{config.FEDIVERSE}">
-					<div class="my-auto w-7 h-7 transition-colors text-neutral-400 hover:text-indigo-700">
+				<a class="flex group" href="https://mastodon.social/{config.FEDIVERSE}">
+					<div
+						class="my-auto w-7 h-7 transition-colors text-neutral-400 group-hover:text-indigo-700 group-focus:text-indigo-700"
+					>
 						<Mastodon />
 					</div>
 				</a>
-				<a class="flex" href="https://discord.com/users/{config.DISCORD}">
-					<div class="my-auto w-7 h-7 transition-colors text-neutral-400 hover:text-blue-600">
+				<a class="flex group" href="https://discord.com/users/{config.DISCORD}">
+					<div
+						class="my-auto w-7 h-7 transition-colors text-neutral-400 group-hover:text-blue-600 group-focus:text-blue-600"
+					>
 						<Discord />
 					</div>
 				</a>
-				<a class="flex" href="https://x.com/{config.TWITTER}">
-					<div class="my-auto w-7 h-7 transition-colors text-neutral-400 hover:text-black">
+				<a class="flex group" href="https://x.com/{config.TWITTER}">
+					<div
+						class="my-auto w-7 h-7 transition-colors text-neutral-400 group-hover:text-black group-focus:text-black"
+					>
 						<X />
 					</div>
 				</a>
-				<a class="flex" href="https://bsky.app/profile/{config.BLUESKY}">
-					<div class="my-auto w-7 h-7 transition-colors text-neutral-400 hover:text-blue-400">
+				<a class="flex group" href="https://bsky.app/profile/{config.BLUESKY}">
+					<div
+						class="my-auto w-7 h-7 transition-colors text-neutral-400 group-hover:text-blue-400 group-focus:text-blue-400"
+					>
 						<Bluesky />
 					</div>
 				</a>

@@ -9,7 +9,7 @@
 <a
 	in:fade={{ delay: 50 * index }}
 	href="/blog/{post.id}"
-	class="shadow-lg transition-all hover:-translate-y-1"
+	class="shadow-lg transition-all focus:-translate-y-1 hover:-translate-y-1"
 >
 	<div
 		class="w-full rounded-lg aspect-video bg-gray-500/10"

@@ -33,7 +33,7 @@
 			</div>
 		</div>
 		<div class="hidden flex-col flex-1 my-auto text-sm xl:flex text-neutral-500">
-			<div class="mx-auto w-5 h-5 transition-colors hover:text-cirro">
+			<div class="mx-auto w-5 h-5 transition-colors focus:text-cirro hover:text-cirro">
 				<Heart></Heart>
 			</div>
 		</div>

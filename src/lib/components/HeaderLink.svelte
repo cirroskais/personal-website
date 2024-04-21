@@ -16,7 +16,7 @@
 	{href}
 	class="my-auto text-lg transition-all {selected
 		? 'font-bold tracking-wider'
-		: 'hover:text-neutral-400'}"
+		: 'hover:text-neutral-400 focus:text-neutral-400'}"
 >
 	<slot />
 </a>

@@ -50,7 +50,7 @@
 	});
 </script>
 
-<a class="hover:shadow-2xl" {href} target="_blank">
+<a class="hover:shadow-2xl focus:shadow-2xl" {href} target="_blank">
 	{#if loaded}
 		<img in:fade class="imgbutton" {src} alt="Button" bind:this={e} />
 	{:else}
