@@ -5,6 +5,9 @@ export default {
 		extend: {
 			container: {
 				center: true
+			},
+			colors: {
+				cirro: '#c4bef3'
 			}
 		},
 		container: {

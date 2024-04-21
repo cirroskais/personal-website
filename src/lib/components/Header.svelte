@@ -17,4 +17,4 @@
 		</div>
 	</div>
 </div>
-<div class="w-full h-0.5 bg-[#c4bef3]"></div>
+<div class="w-full h-0.5 bg-cirro"></div>

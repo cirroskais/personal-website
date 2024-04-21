@@ -21,7 +21,7 @@
 			</div>
 		</div>
 		<div class="flex flex-col flex-1 my-auto text-sm text-neutral-500">
-			<div class="mx-auto w-5 h-5 hover:text-[#c4bef3] transition-colors">
+			<div class="mx-auto w-5 h-5 transition-colors hover:text-cirro">
 				<Heart></Heart>
 			</div>
 		</div>
