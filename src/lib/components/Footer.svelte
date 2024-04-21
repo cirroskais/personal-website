@@ -69,7 +69,7 @@
 					class="flex space-x-0.5 text-[#8c52ff] underline underline-offset-[3px]"
 				>
 					<div class="my-auto w-4 h-4">
-						<enhanced:img src="/static/icons/coolify-transparent.png" alt="" />
+						<enhanced:img src="/static/img/icons/coolify-transparent.png" alt="" />
 					</div>
 					<p class="font-bold">Coolify</p>
 				</a>

@@ -1,5 +1,17 @@
 [
-	{ "id": 1, "slug": "hello-world", "title": "Hello, World!", "image": "/img/blogtest1.gif" },
-	{ "id": 2, "slug": "hardware", "title": "Hardware", "image": "/img/blogtest2.gif" },
-	{ "id": 3, "slug": "test-post", "title": "Test Post", "image": "/img/blogtest3.gif" }
+	{
+		"slug": "hello-world",
+		"title": "Hello, World!",
+		"image": "/img/blog/hello-world.gif"
+	},
+	{
+		"slug": "hardware",
+		"title": "Hardware",
+		"image": "/img/blog/hardware.gif"
+	},
+	{
+		"slug": "test-post",
+		"title": "Test Post",
+		"image": "/img/blog/test-post.gif"
+	}
 ]

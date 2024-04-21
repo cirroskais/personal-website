@@ -21,10 +21,8 @@
 
 		while (page.length < 16) {
 			page.push({
-				id: -1,
-				title: '',
-				image: '',
-				slug: ''
+				// @ts-ignore
+				filler: true
 			});
 		}
 
@@ -45,7 +43,7 @@
 		<div class="grid gap-2 md:grid-rows-8 md:grid-cols-2 2xl:grid-cols-4 2xl:grid-rows-4">
 			{#key posts}
 				{#each posts as post, i}
-					{#if post.id === -1}
+					{#if post.filler}
 						<ScaffoldListedPost index={i}></ScaffoldListedPost>
 					{:else}
 						<ListedPost {post} index={i}></ListedPost>
