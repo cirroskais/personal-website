@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import { fade } from 'svelte/transition';
 
 	/** @type {string} src */
 	export let src;
@@ -9,6 +10,8 @@
 
 	/** @type {HTMLImageElement} e */
 	let e;
+
+	let loaded = false;
 
 	// https://github.com/nbitzz/newnewwebsite/blob/a751e690a9993923aabd1984d9645c502f148c69/src/components/buttons/Buttons.astro#L74-L95
 	onMount(() => {
@@ -21,7 +24,7 @@
 				` rotate3d(${yP.toFixed(2)}, ${xP.toFixed(2)},0,20deg)` +
 				` translate(${3 * xP}px,${-5 * yP}px)`;
 
-			e.style.boxShadow = 'gray 0px 0px 10px';
+			e.style.boxShadow = `${(-3 * xP).toFixed(2)}px ${(5 * yP).toFixed(2)}px 3px #c4bef3`;
 		};
 
 		e.addEventListener('mouseover', startEffect);
@@ -30,11 +33,16 @@
 			e.style.transform = '';
 			e.style.boxShadow = '';
 		});
+
+		const preload = new Image();
+		preload.src = src;
+		preload.onload = () => (loaded = true);
 	});
 </script>
 
 <a class="hover:shadow-2xl" {href} target="_blank">
-	<img class="imgbutton" {src} alt="Button" bind:this={e} />
+	<img in:fade class="imgbutton {!loaded && 'hidden'}" {src} alt="Button" bind:this={e} />
+	<div class="animate-pulse imgbutton bg-neutral-600/50 rounded-sm {loaded && 'hidden'}"></div>
 </a>
 
 <style lang="postcss">
@@ -42,5 +50,7 @@
 		transition-property: transform;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		transition-duration: 70ms;
+		height: 31px;
+		width: 88px;
 	}
 </style>

@@ -12,7 +12,7 @@
 				<div class="my-auto w-5 h-5 font-bold">
 					<Eye></Eye>
 				</div>
-				<p>This page has been viewed <span class="font-bold">100</span> times.</p>
+				<p>This page has been viewed <span class="font-bold">x</span> times.</p>
 			</div>
 		</div>
 		<div class="flex flex-col my-auto ml-auto text-sm text-neutral-500">
