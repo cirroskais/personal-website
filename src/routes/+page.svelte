@@ -17,7 +17,7 @@
 	<title>{$page.data.discord?.username}/home</title>
 </svelte:head>
 
-<div class="hero w-full h-[54rem] rounded-lg mx-auto my-auto">
+<div class="hero w-full h-[calc(100vh-4.125rem)] rounded-lg mx-auto my-auto">
 	<div class="p-4 h-full rounded-lg md:flex">
 		<div class="my-auto md:w-fit md:mx-auto min-h-max">
 			<div class="flex md:w-[42rem] p-2 bg-black/75 rounded-lg">
@@ -76,7 +76,7 @@
 						)?.['#text']}
 						alt="Album art for {$page.data.lastfm?.recenttracks?.track[0]?.name}"
 					/>
-					<div class="overflow-scroll my-auto">
+					<div class="overflow-x-auto my-auto">
 						<p class="text-2xl whitespace-nowrap text-neutral-300">
 							{$page.data.lastfm?.recenttracks?.track[0]?.name}
 						</p>
