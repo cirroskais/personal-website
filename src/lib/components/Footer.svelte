@@ -5,18 +5,30 @@
 	import Svelte from './Icons/Svelte.svelte';
 	import TailwindCSS from './Icons/TailwindCSS.svelte';
 	import Heart from './Icons/Heart.svelte';
+	import Forgejo from './Icons/Forgejo.svelte';
 </script>
 
 <div class="flex py-2 w-full h-full shadow-lg bg-gray-500/10">
 	<div class="container flex">
 		<div class="flex flex-col flex-1 my-auto text-sm text-neutral-500">
-			<p>cirroskais.xyz ― cirro's website</p>
+			<p class="font-bold">cirroskais.xyz ― cirro's website</p>
 			<div class="flex space-x-0.5">
 				<div class="my-auto w-5 h-5 font-bold">
 					<Eye></Eye>
 				</div>
 				<p>
 					This website has been viewed <span class="font-bold">{$page.data.counter}</span> times.
+				</p>
+			</div>
+			<div class="flex space-x-0.5">
+				<div class="my-auto w-5 h-5 font-bold">
+					<Forgejo></Forgejo>
+				</div>
+				<p>
+					View the source on <a
+						class="font-bold"
+						href="https://git.madhouselabs.net/cirroskais/personal-website">Forgejo</a
+					>.
 				</p>
 			</div>
 		</div>
