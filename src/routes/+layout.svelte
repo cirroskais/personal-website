@@ -10,19 +10,10 @@
 
 <svelte:head>
 	<link href="https://chadthundercock.com/@cirroskais" rel="me" />
-	<link
-		rel="icon"
-		type="image/png"
-		href="https://cdn.discordapp.com/avatars/{$page.data.discord.id}/{$page.data.discord
-			.avatar}.png"
-	/>
+	<link rel="icon" type="image/png" href="{$page.url.toString()}api/avatar" />
 	<meta property="og:title" content={$page.data.discord.username} />
 	<meta property="og:url" content={$page.url.toString()} />
-	<meta
-		property="og:image"
-		content="https://cdn.discordapp.com/avatars/{$page.data.discord.id}/{$page.data.discord
-			.avatar}.png"
-	/>
+	<meta property="og:image" content="{$page.url.toString()}api/avatar" />
 	<meta property="og:description" content="snow leopard that likes computers." />
 	<meta property="og:site_name" content={$page.url.hostname} />
 	<meta name="theme-color" content="#c4bef3" />
