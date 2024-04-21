@@ -42,6 +42,7 @@ declare global {
 			posts?: Array<PostsObject>;
 			discord: Discord;
 			lastfm: LastFM;
+			counter: number;
 		}
 		// interface PageState {}
 		// interface Platform {}
