@@ -2,8 +2,6 @@
 	import { onMount } from 'svelte';
 	import SvelteMarkdown from 'svelte-markdown';
 	import { fade } from 'svelte/transition';
-
-	import Image from '$lib/components/Image.svelte';
 	import blog from '$lib/blog.json';
 
 	export let data;
@@ -18,8 +16,8 @@
 	});
 </script>
 
-<div class="flex flex-col mx-auto space-y-2">
-	<div class="mx-auto w-full max-w-[65ch]">
+<div class="flex flex-col mx-auto space-y-2 max-w-[65ch]">
+	<div class="mx-auto w-full">
 		<div
 			class="h-[10rem] w-full rounded-lg aspect-video bg-gray-500/10"
 			style="background-image: url({thisPost?.image});   
@@ -36,10 +34,10 @@
 		</div>
 	</div>
 
-	<div class="h-1 rounded-full bg-cirro mx-auto w-full max-w-[65ch]"></div>
+	<div class="mx-auto w-full h-1 rounded-full bg-cirro"></div>
 
 	{#key markdown}
-		<article in:fade class="mx-auto prose prose-sm sm:prose-base prose-invert">
+		<article in:fade class="prose prose-sm sm:prose-base prose-invert">
 			<SvelteMarkdown source={markdown}></SvelteMarkdown>
 		</article>
 	{/key}
