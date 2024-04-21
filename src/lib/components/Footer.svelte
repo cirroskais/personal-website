@@ -20,7 +20,7 @@
 					This website has been viewed <span class="font-bold">{$page.data.counter}</span> times.
 				</p>
 			</div>
-			<div class="flex hidden space-x-0.5 md:flex">
+			<div class="hidden space-x-0.5 md:flex">
 				<div class="my-auto w-5 h-5 font-bold">
 					<Forgejo></Forgejo>
 				</div>
