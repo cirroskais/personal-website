@@ -18,7 +18,7 @@
 	});
 </script>
 
-<div class="flex flex-col space-y-2 w-[65ch] mx-auto">
+<div class="flex flex-col space-y-2 md:w-[65ch] mx-auto">
 	<div class="mx-auto w-full">
 		<div
 			class="h-[10rem] w-full rounded-lg aspect-video bg-gray-500/10"
@@ -39,7 +39,7 @@
 	<span class="h-0.5 rounded-full bg-cirro"></span>
 
 	{#key markdown}
-		<article in:fade class="mx-auto prose prose-invert">
+		<article in:fade class="mx-auto prose prose-sm sm:prose-base prose-invert">
 			<SvelteMarkdown source={markdown}></SvelteMarkdown>
 		</article>
 	{/key}
