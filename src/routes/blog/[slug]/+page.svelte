@@ -18,8 +18,8 @@
 	});
 </script>
 
-<div class="flex flex-col space-y-2 md:w-[65ch] mx-auto">
-	<div class="mx-auto w-full">
+<div class="flex flex-col mx-auto space-y-2">
+	<div class="mx-auto w-full max-w-[65ch]">
 		<div
 			class="h-[10rem] w-full rounded-lg aspect-video bg-gray-500/10"
 			style="background-image: url({thisPost?.image});   
@@ -36,7 +36,7 @@
 		</div>
 	</div>
 
-	<span class="h-0.5 rounded-full bg-cirro"></span>
+	<div class="h-1 rounded-full bg-cirro mx-auto w-full max-w-[65ch]"></div>
 
 	{#key markdown}
 		<article in:fade class="mx-auto prose prose-sm sm:prose-base prose-invert">
