@@ -10,7 +10,7 @@
 
 <div class="flex py-2 w-full h-full shadow-lg bg-gray-500/10">
 	<div class="container flex">
-		<div class="flex flex-col flex-1 my-auto text-sm text-neutral-500">
+		<div class="hidden flex-col flex-1 my-auto text-sm md:flex text-neutral-500">
 			<p class="font-bold">cirroskais.xyz ― cirro's website</p>
 			<div class="flex space-x-0.5">
 				<div class="my-auto w-5 h-5 font-bold">
@@ -32,12 +32,12 @@
 				</p>
 			</div>
 		</div>
-		<div class="flex flex-col flex-1 my-auto text-sm text-neutral-500">
+		<div class="hidden flex-col flex-1 my-auto text-sm xl:flex text-neutral-500">
 			<div class="mx-auto w-5 h-5 transition-colors hover:text-cirro">
 				<Heart></Heart>
 			</div>
 		</div>
-		<div class="flex flex-col flex-1 my-auto text-sm text-neutral-500">
+		<div class="hidden flex-col flex-1 my-auto text-sm md:flex text-neutral-500">
 			<div class="flex ml-auto space-x-1.5">
 				<p>Built with</p>
 				<a

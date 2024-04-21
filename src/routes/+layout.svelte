@@ -27,16 +27,16 @@
 	<meta name="theme-color" content="#c4bef3" />
 </svelte:head>
 
-<div class="w-screen h-[3.125rem] mb-2">
+<div class="w-screen h-[3.125rem] mb-4">
 	<Header></Header>
 </div>
 
 {#key $page.url}
-	<div in:fade class="container mx-auto min-h-[calc(100vh-4.125rem)]">
+	<div in:fade class="container mx-auto min-h-[calc(100vh-5.125rem)]">
 		<slot />
 	</div>
 {/key}
 
-<div class="mt-2 w-screen">
+<div class="hidden mt-4 w-screen md:block">
 	<Footer></Footer>
 </div>

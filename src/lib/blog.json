@@ -1,0 +1,5 @@
+[
+	{ "id": 1, "title": "Hello, World!", "image": "/img/blogtest1.gif" },
+	{ "id": 2, "title": "Hardware", "image": "/img/blogtest2.gif" },
+	{ "id": 3, "title": "Test Post", "image": "/img/blogtest3.gif" }
+]

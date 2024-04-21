@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
 	import { page } from '$app/stores';
+	import blog from '$lib/blog.json';
 
 	import ListedPost from '$lib/components/Blog/ListedPost.svelte';
 	import First from '$lib/components/Icons/First.svelte';
@@ -14,10 +15,7 @@
 
 	/** @param {number} index */
 	async function loadPosts(index) {
-		const response = await fetch(`/api/blog?index=${index}`);
-		const body = await response.json();
-
-		posts = body.posts;
+		posts = blog;
 	}
 
 	onMount(() => loadPosts(0));
