@@ -30,7 +30,7 @@
 	});
 </script>
 
-<a {href} target="_blank">
+<a class="hover:shadow-2xl" {href} target="_blank">
 	<img class="imgbutton" {src} alt="Button" bind:this={e} />
 </a>
 
