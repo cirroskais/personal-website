@@ -1,7 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
-	import Eye from './Icons/Eye.svelte';
 
 	/** @type {string} src */
 	export let src;
@@ -36,6 +35,7 @@
 
 				// gotta wait for svelte to realize that e does in fact, exist
 				setTimeout(() => {
+					if (!e) return;
 					e.addEventListener('mouseover', startEffect);
 					e.addEventListener('mousemove', startEffect);
 					e.addEventListener('mouseleave', () => {
@@ -45,6 +45,8 @@
 				}, 100);
 			};
 		}
+
+		return () => {};
 	});
 </script>
 
