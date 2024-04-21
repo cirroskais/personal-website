@@ -32,7 +32,7 @@
 </div>
 
 {#key $page.url}
-	<div in:fade class="container mx-auto min-h-[calc(100vh-6rem)]">
+	<div in:fade class="container mx-auto min-h-[calc(100vh-4.125rem)]">
 		<slot />
 	</div>
 {/key}
