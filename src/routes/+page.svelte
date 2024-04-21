@@ -92,7 +92,7 @@
 				<ImgButton href="https://split.pet" src="/buttons/split.png"></ImgButton>
 				<ImgButton href="https://www.mozilla.org/en-US/firefox/new/" src="/buttons/firefox.gif"
 				></ImgButton>
-				<ImgButton src="/buttons/lol.gif" href=""></ImgButton>
+				<ImgButton src="/buttons/lol.gif"></ImgButton>
 			</div>
 		</div>
 	</div>

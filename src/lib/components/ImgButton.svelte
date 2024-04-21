@@ -1,12 +1,13 @@
 <script>
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
+	import Eye from './Icons/Eye.svelte';
 
 	/** @type {string} src */
 	export let src;
 
-	/** @type {string=} href */
-	export let href;
+	/** @type {string|undefined} href */
+	export let href = undefined;
 
 	/** @type {HTMLImageElement} e */
 	let e;
@@ -27,22 +28,29 @@
 			e.style.boxShadow = `${(-3 * xP).toFixed(2)}px ${(5 * yP).toFixed(2)}px 3px #c4bef3`;
 		};
 
-		e.addEventListener('mouseover', startEffect);
-		e.addEventListener('mousemove', startEffect);
-		e.addEventListener('mouseleave', () => {
-			e.style.transform = '';
-			e.style.boxShadow = '';
-		});
+		if (src) {
+			const preload = new Image();
+			preload.src = src;
+			preload.onload = () => {
+				loaded = true;
 
-		const preload = new Image();
-		preload.src = src;
-		preload.onload = () => (loaded = true);
+				e.addEventListener('mouseover', startEffect);
+				e.addEventListener('mousemove', startEffect);
+				e.addEventListener('mouseleave', () => {
+					e.style.transform = '';
+					e.style.boxShadow = '';
+				});
+			};
+		}
 	});
 </script>
 
 <a class="hover:shadow-2xl" {href} target="_blank">
-	<img in:fade class="imgbutton {!loaded && 'hidden'}" {src} alt="Button" bind:this={e} />
-	<div class="animate-pulse imgbutton bg-neutral-600/50 rounded-sm {loaded && 'hidden'}"></div>
+	{#if loaded}
+		<img in:fade class="imgbutton" {src} alt="Button" bind:this={e} />
+	{:else}
+		<div class="rounded-sm animate-pulse imgbutton bg-neutral-600/50"></div>
+	{/if}
 </a>
 
 <style lang="postcss">
