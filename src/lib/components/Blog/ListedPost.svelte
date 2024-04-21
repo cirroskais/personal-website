@@ -7,7 +7,7 @@
 </script>
 
 <a
-	in:fade={{ delay: 50 * index }}
+	in:fade|global={{ delay: 50 * index }}
 	href="/blog/{post.id}"
 	class="shadow-lg transition-all focus:-translate-y-1 hover:-translate-y-1"
 >
@@ -18,7 +18,6 @@
         background-size: cover;"
 	>
 		<div class="flex w-full h-full bg-gradient-to-t from-black to-transparent rounded-lg">
-			<!-- <Image style="bg-black rounded-xl" src={post.image} alt="Blog post cover" /> -->
 			<p class="z-10 pb-2 mt-auto ml-2 text-2xl">
 				{post.title}
 			</p>

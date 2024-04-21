@@ -20,7 +20,7 @@
 <div class="hero w-full h-[calc(100vh-5.125rem)] rounded-lg mx-auto my-auto">
 	<div class="flex p-4 h-full rounded-lg">
 		<div class="my-auto md:w-fit md:mx-auto min-h-max">
-			<div class="flex md:w-[42rem] p-2 bg-black/75 rounded-lg">
+			<div class="flex md:w-[42rem] p-2 bg-black/75 rounded-lg shadow-lg">
 				<Image
 					style="mr-2 h-20 w-20 rounded-full md:h-24 md:w-24"
 					src="https://cdn.discordapp.com/avatars/{$page.data.discord.id}/{$page.data.discord
@@ -33,7 +33,7 @@
 			</div>
 
 			<div
-				class="md:w-[42rem] flex place-content-center space-x-2 text-xl p-2 bg-black/75 rounded-lg mt-1"
+				class="md:w-[42rem] flex place-content-center space-x-2 text-xl p-2 bg-black/75 rounded-lg mt-1 shadow-lg"
 			>
 				<a class="flex group" href="https://www.last.fm/user/{config.LASTFM}">
 					<div
@@ -79,7 +79,7 @@
 				</a>
 			</div>
 
-			<div class="md:w-[42rem] p-2 bg-black/75 rounded-lg mt-1">
+			<div class="md:w-[42rem] p-2 bg-black/75 rounded-lg mt-1 shadow-lg">
 				<div class="flex space-x-2.5">
 					<Image
 						style="w-24 h-24"
@@ -99,7 +99,9 @@
 				</div>
 			</div>
 
-			<div class="md:w-[42rem] p-2 bg-black/75 rounded-lg mt-1 flex justify-center flex-wrap gap-2">
+			<div
+				class="md:w-[42rem] p-2 bg-black/75 rounded-lg mt-1 flex justify-center flex-wrap gap-2 shadow-lg"
+			>
 				<ImgButton href="https://cirroskais.xyz" src="/buttons/cirro.png"></ImgButton>
 				<ImgButton href="https://twitter.com/Porpss1" src="/buttons/rovin.png"></ImgButton>
 				<ImgButton href="https://split.pet" src="/buttons/split.png"></ImgButton>

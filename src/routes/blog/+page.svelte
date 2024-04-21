@@ -1,5 +1,4 @@
 <script>
-	import { onMount } from 'svelte';
 	import { writable } from 'svelte/store';
 	import { page } from '$app/stores';
 	import blog from '$lib/blog.json';
@@ -10,15 +9,30 @@
 	import ScaffoldListedPost from '$lib/components/Blog/ScaffoldListedPost.svelte';
 
 	/**  @type {any[]} */
-	let posts = [];
+	let posts = loadPosts(0);
+	let pages = Math.ceil(blog.length / 12);
 	let selectedPage = writable(0);
 
 	/** @param {number} index */
-	async function loadPosts(index) {
-		posts = blog;
+	function loadPosts(index) {
+		let page = Array.from(blog);
+		page.reverse();
+		page = page.slice(index * 12, (index + 1) * 12);
+
+		while (page.length < 12) {
+			page.push({
+				id: -1,
+				title: '',
+				image: ''
+			});
+		}
+
+		return page;
 	}
 
-	onMount(() => loadPosts(0));
+	selectedPage.subscribe((i) => {
+		posts = loadPosts(i);
+	});
 </script>
 
 <svelte:head>
@@ -29,12 +43,28 @@
 	<div
 		class="grid gap-2 md:grid-cols-2 md:grid-rows-5 lg:grid-cols-3 lg:grid-rows-4 xl:grid-cols-4 xl:grid-rows-3"
 	>
-		{#each posts as post, i}
-			<ListedPost {post} index={i}></ListedPost>
-		{:else}
-			{#each Array(12).fill('') as _}
-				<ScaffoldListedPost></ScaffoldListedPost>
+		{#key posts}
+			{#each posts as post, i}
+				{#if post.id === -1}
+					<ScaffoldListedPost index={i}></ScaffoldListedPost>
+				{:else}
+					<ListedPost {post} index={i}></ListedPost>
+				{/if}
 			{/each}
-		{/each}
+		{/key}
+	</div>
+	<div>
+		<p>{pages} pages</p>
+		<p>page {$selectedPage + 1}</p>
+		<button
+			on:click={() => {
+				$selectedPage -= 1;
+			}}>back</button
+		>
+		<button
+			on:click={() => {
+				$selectedPage += 1;
+			}}>forward</button
+		>
 	</div>
 </div>
