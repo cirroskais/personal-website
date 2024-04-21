@@ -1,14 +1,13 @@
 <script>
 	import { fade } from 'svelte/transition';
-	import Image from '../Image.svelte';
 
-	export let post = { id: 0, title: '', image: '' },
+	export let post = { id: 0, title: '', image: '', slug: '' },
 		index = 0;
 </script>
 
 <a
 	in:fade|global={{ delay: 50 * index }}
-	href="/blog/{post.id}"
+	href="/blog/{post.slug}"
 	class="shadow-lg transition-all focus:-translate-y-1 hover:-translate-y-1"
 >
 	<div

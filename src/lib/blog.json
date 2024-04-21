@@ -1,22 +1,5 @@
 [
-	{ "id": 1, "title": "Hello, World!", "image": "/img/blogtest1.gif" },
-	{ "id": 2, "title": "Hardware", "image": "/img/blogtest2.gif" },
-	{ "id": 3, "title": "Test Post", "image": "/img/blogtest3.gif" },
-	{ "id": 4, "title": "Test Post", "image": "/img/blogtest3.gif" },
-	{ "id": 5, "title": "Test Post", "image": "/img/blogtest3.gif" },
-	{ "id": 6, "title": "Test Post", "image": "/img/blogtest3.gif" },
-	{ "id": 7, "title": "Test Post", "image": "/img/blogtest3.gif" },
-	{ "id": 8, "title": "Test Post", "image": "/img/blogtest3.gif" },
-	{ "id": 9, "title": "Test Post", "image": "/img/blogtest3.gif" },
-	{ "id": 10, "title": "Test Post", "image": "/img/blogtest3.gif" },
-	{ "id": 11, "title": "Test Post", "image": "/img/blogtest3.gif" },
-	{ "id": 12, "title": "Test Post", "image": "/img/blogtest3.gif" },
-	{ "id": 13, "title": "Test Post", "image": "/img/blogtest3.gif" },
-	{ "id": 14, "title": "Test Post", "image": "/img/blogtest3.gif" },
-	{ "id": 15, "title": "Test Post", "image": "/img/blogtest3.gif" },
-	{ "id": 16, "title": "Test Post", "image": "/img/blogtest3.gif" },
-	{ "id": 17, "title": "Test Post", "image": "/img/blogtest3.gif" },
-	{ "id": 18, "title": "Test Post", "image": "/img/blogtest3.gif" },
-	{ "id": 19, "title": "Test Post", "image": "/img/blogtest3.gif" },
-	{ "id": 20, "title": "Test Post", "image": "/img/blogtest3.gif" }
+	{ "id": 1, "slug": "hello-world", "title": "Hello, World!", "image": "/img/blogtest1.gif" },
+	{ "id": 2, "slug": "hardware", "title": "Hardware", "image": "/img/blogtest2.gif" },
+	{ "id": 3, "slug": "test-post", "title": "Test Post", "image": "/img/blogtest3.gif" }
 ]
