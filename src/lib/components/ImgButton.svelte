@@ -34,12 +34,15 @@
 			preload.onload = () => {
 				loaded = true;
 
-				e.addEventListener('mouseover', startEffect);
-				e.addEventListener('mousemove', startEffect);
-				e.addEventListener('mouseleave', () => {
-					e.style.transform = '';
-					e.style.boxShadow = '';
-				});
+				// gotta wait for svelte to realize that e does in fact, exist
+				setTimeout(() => {
+					e.addEventListener('mouseover', startEffect);
+					e.addEventListener('mousemove', startEffect);
+					e.addEventListener('mouseleave', () => {
+						e.style.transform = '';
+						e.style.boxShadow = '';
+					});
+				}, 100);
 			};
 		}
 	});
