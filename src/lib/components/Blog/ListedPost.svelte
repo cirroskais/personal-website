@@ -17,7 +17,7 @@
         background-size: cover;"
 	>
 		<div class="flex w-full h-full bg-gradient-to-t from-black to-transparent rounded-lg">
-			<p class="z-10 pb-2 mt-auto ml-2 text-2xl">
+			<p class="pb-2 pl-3 mt-auto text-2xl">
 				{post.title}
 			</p>
 		</div>
