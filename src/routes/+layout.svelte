@@ -23,12 +23,12 @@
 	<meta name="theme-color" content="#fefefe" />
 </svelte:head>
 
-<div class="w-screen h-[3rem]">
+<div class="w-screen h-[3.125rem]">
 	<Header></Header>
 </div>
 
 {#key $page.url}
-	<div in:fade class="container mx-auto py-2 min-h-[calc(100vh-3rem)]">
+	<div in:fade class="container mx-auto py-2 min-h-[calc(100vh-3.125rem)]">
 		<slot />
 	</div>
 {/key}

@@ -27,5 +27,8 @@
     "lint": "prettier --check .",
     "format": "prettier --write ."
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@sveltejs/enhanced-img": "^0.2.0"
+  }
 }

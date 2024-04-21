@@ -3,6 +3,7 @@
 	import config from '$lib/config';
 
 	import ImgButton from '$lib/components/ImgButton.svelte';
+	import Image from '$lib/components/Image.svelte';
 
 	import Discord from '$lib/components/Icons/Discord.svelte';
 	import Lastfm from '$lib/components/Icons/LastFM.svelte';
@@ -20,8 +21,8 @@
 	<div class="p-4 h-full rounded-lg md:flex">
 		<div class="my-auto md:w-fit md:mx-auto min-h-max">
 			<div class="flex md:w-[42rem] p-2 bg-black/75 rounded-lg">
-				<img
-					class="mr-2 h-20 rounded-full md:h-24"
+				<Image
+					style="mr-2 h-20 w-20 rounded-full md:h-24 md:w-24"
 					src="https://cdn.discordapp.com/avatars/{$page.data.discord.id}/{$page.data.discord
 						.avatar}.png"
 					alt="{$page.data.discord?.username}'s profile picture"
@@ -68,15 +69,15 @@
 
 			<div class="md:w-[42rem] p-2 bg-black/75 rounded-lg mt-1">
 				<div class="flex space-x-2.5">
-					<img
-						class="w-24 h-24"
-						src={$page.data.lastfm?.recenttracks?.track[0]?.image.find(
+					<Image
+						style="w-24 h-24"
+						src={$page.data.lastfm.recenttracks.track[0].image.find(
 							(_) => _.size == 'extralarge'
 						)?.['#text']}
 						alt="Album art for {$page.data.lastfm?.recenttracks?.track[0]?.name}"
 					/>
-					<div class="my-auto w-full">
-						<p class="text-2xl overflow-clip whitespace-nowrap text-neutral-300">
+					<div class="overflow-scroll my-auto">
+						<p class="text-2xl whitespace-nowrap text-neutral-300">
 							{$page.data.lastfm?.recenttracks?.track[0]?.name}
 						</p>
 						<p class="text-xl text-neutral-500">

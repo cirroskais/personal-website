@@ -20,12 +20,15 @@
 				'scale(105%)' +
 				` rotate3d(${yP.toFixed(2)}, ${xP.toFixed(2)},0,20deg)` +
 				` translate(${3 * xP}px,${-5 * yP}px)`;
+
+			e.style.boxShadow = 'gray 0px 0px 10px';
 		};
 
 		e.addEventListener('mouseover', startEffect);
 		e.addEventListener('mousemove', startEffect);
 		e.addEventListener('mouseleave', () => {
 			e.style.transform = '';
+			e.style.boxShadow = '';
 		});
 	});
 </script>
@@ -38,6 +41,6 @@
 	.imgbutton {
 		transition-property: transform;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-		transition-duration: 85ms;
+		transition-duration: 70ms;
 	}
 </style>
