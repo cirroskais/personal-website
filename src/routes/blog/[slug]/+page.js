@@ -1,4 +1,4 @@
-import customEmojis from '$lib/emojis.json';
+import customEmojis from '$lib/emojis';
 
 export async function load({ params }) {
 	const response = await fetch(

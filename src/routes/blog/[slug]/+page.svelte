@@ -5,7 +5,7 @@
 	import { marked } from 'marked';
 	import { markedEmoji } from 'marked-emoji';
 
-	import blog from '$lib/blog.json';
+	import blog from '$lib/blog';
 	import { goto } from '$app/navigation';
 
 	export let data;

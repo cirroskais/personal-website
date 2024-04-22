@@ -1,7 +1,7 @@
 <script>
 	import { writable } from 'svelte/store';
 	import { page } from '$app/stores';
-	import blog from '$lib/blog.json';
+	import blog from '$lib/blog';
 
 	import ListedPost from '$lib/components/Blog/ListedPost.svelte';
 	import Back from '$lib/components/Icons/Back.svelte';
