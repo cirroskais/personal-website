@@ -4,10 +4,7 @@
 	import Meta from '$lib/components/Meta.svelte';
 </script>
 
-<Meta
-	title="{$page.data.discord?.username}/projects"
-	descripton="snow leopard that likes computers"
-/>
+<Meta title="projects · cirroskais" descripton="snow leopard that likes computers" />
 
 <div class="flex w-full h-[calc(100vh-5.125rem)]">
 	<p class="m-auto text-2xl italic text-neutral-700">

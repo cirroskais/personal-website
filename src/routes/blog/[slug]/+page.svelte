@@ -32,7 +32,7 @@
 	});
 </script>
 
-<Meta title="{$page.data.discord?.username}/blog/{thisPost?.slug}" bigImage={thisPost?.image} />
+<Meta title="{thisPost?.title.toLowerCase()} · cirroskais" bigImage={thisPost?.image} />
 
 <div class="flex flex-col mx-auto space-y-2 max-w-[65ch]">
 	<div class="mx-auto w-full">

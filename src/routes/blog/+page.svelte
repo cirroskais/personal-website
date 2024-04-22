@@ -36,7 +36,7 @@
 	});
 </script>
 
-<Meta title="{$page.data.discord?.username}/home" descripton="snow leopard that likes computers" />
+<Meta title="blog · cirroskais" descripton="snow leopard that likes computers" />
 
 <div class="flex flex-col w-full">
 	<div class="flex flex-col my-auto space-y-2">

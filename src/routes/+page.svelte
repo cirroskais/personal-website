@@ -16,7 +16,7 @@
 	import Bluesky from '$lib/components/Icons/Bluesky.svelte';
 </script>
 
-<Meta title="{$page.data.discord?.username}/home" descripton="snow leopard that likes computers" />
+<Meta title="home · cirroskais" descripton="snow leopard that likes computers" />
 
 <div class="hero w-full h-[calc(100vh-5.125rem)] rounded-lg mx-auto my-auto">
 	<div class="flex p-4 h-full rounded-lg">
