@@ -6,6 +6,7 @@
 	import { markedEmoji } from 'marked-emoji';
 
 	import blog from '$lib/blog.json';
+	import { goto } from '$app/navigation';
 
 	export let data;
 
@@ -21,6 +22,7 @@
 	);
 
 	onMount(async () => {
+		if (!thisPost?.title) return goto('/blog');
 		const response = await fetch(`/blog/${data.slug}.md`);
 		const body = await response.text();
 		markdown = await marked.parse(body);
