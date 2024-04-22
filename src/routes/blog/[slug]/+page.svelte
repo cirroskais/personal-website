@@ -53,9 +53,3 @@
 		</article>
 	{/key}
 </div>
-
-<style lang="postcss">
-	.marked-emoji-img {
-		@apply w-7 h-7;
-	}
-</style>
