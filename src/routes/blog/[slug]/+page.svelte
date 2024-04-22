@@ -1,7 +1,10 @@
 <script>
 	import { onMount } from 'svelte';
-	import SvelteMarkdown from 'svelte-markdown';
 	import { fade } from 'svelte/transition';
+
+	import { marked } from 'marked';
+	import { markedEmoji } from 'marked-emoji';
+
 	import blog from '$lib/blog.json';
 
 	export let data;
@@ -9,10 +12,18 @@
 	let markdown = '';
 	let thisPost = blog.find((post) => post.slug === data.slug);
 
+	marked.use(
+		markedEmoji({
+			emojis: data.emojis,
+			renderer: (token) =>
+				`<img alt="${token.name}" src="${token.emoji}" class="inline-block !mt-0 !mb-[0.15rem] h-[1.35rem] marked-emoji-img">`
+		})
+	);
+
 	onMount(async () => {
 		const response = await fetch(`/blog/${data.slug}.md`);
 		const body = await response.text();
-		markdown = body;
+		markdown = await marked.parse(body);
 	});
 </script>
 
@@ -38,7 +49,13 @@
 
 	{#key markdown}
 		<article in:fade class="prose prose-sm sm:prose-base prose-invert">
-			<SvelteMarkdown source={markdown}></SvelteMarkdown>
+			{@html markdown}
 		</article>
 	{/key}
 </div>
+
+<style lang="postcss">
+	.marked-emoji-img {
+		@apply w-7 h-7;
+	}
+</style>

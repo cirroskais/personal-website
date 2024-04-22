@@ -31,6 +31,8 @@
   "type": "module",
   "dependencies": {
     "@sveltejs/enhanced-img": "^0.2.0",
-    "svelte-markdown": "^0.4.1"
+    "marked": "^12.0.2",
+    "marked-alert": "^2.0.1",
+    "marked-emoji": "^1.4.0"
   }
 }

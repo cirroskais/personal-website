@@ -279,3 +279,34 @@ Unlike a pre-formatted code block, a code span indicates code within a
 normal paragraph. For example:
 
 Use the `printf()` function.
+
+## Custom Stuff
+
+### Alerts
+
+> test
+
+> [!NOTE]
+> Highlights information that users should take into account, even when skimming.
+
+> [!TIP]
+> Optional information to help a user be more successful.
+
+> [!IMPORTANT]
+> Crucial information necessary for users to succeed.
+
+> [!WARNING]
+> Critical content demanding immediate user attention due to potential risks.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
+### Emojis
+
+Emojis are completely custom, and follow Discord's emoji mapping. The emoji pack currently being used is Blobmoji.
+
+:cat: :robot: :tulip: :calling: :flag_us: :heart: Hello, World!
+
+🐱 🤖 🌷 📲 🇺🇸 ❤️ Hello, World!
+
+:wavesmiley: Hello, World!

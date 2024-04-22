@@ -16,6 +16,7 @@
 	/** @param {number} index */
 	function loadPosts(index) {
 		let page = Array.from(blog);
+		page = page.filter((_) => !_?.unlisted);
 		page.reverse();
 		page = page.slice(index * 16, (index + 1) * 16);
 

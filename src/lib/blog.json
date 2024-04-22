@@ -12,6 +12,7 @@
 	{
 		"slug": "test-post",
 		"title": "Test Post",
-		"image": "/img/blog/test-post.gif"
+		"image": "/img/blog/test-post.gif",
+		"unlisted": true
 	}
 ]
