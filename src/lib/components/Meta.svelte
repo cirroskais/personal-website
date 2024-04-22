@@ -14,7 +14,7 @@
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="og:image" content={$page.url.origin + bigImage} />
 	{:else}
-		<meta property="og:image" content={$page.url.origin + image} />
+		<meta property="og:image" content={$page.url.origin + (image.length ? image : '/api/avatar')} />
 	{/if}
 	<meta property="og:description" content={descripton} />
 </svelte:head>
