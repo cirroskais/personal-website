@@ -105,10 +105,13 @@
 				<ImgButton href="https://cirroskais.xyz" src="/img/buttons/cirro.png"></ImgButton>
 				<ImgButton href="https://twitter.com/Porpss1" src="/img/buttons/rovin.png"></ImgButton>
 				<ImgButton href="https://split.pet" src="/img/buttons/split.png"></ImgButton>
+				<ImgButton href="https://m1cro.xyz/" src="/img/buttons/micro.png"></ImgButton>
+				<ImgButton href="https://vea.st/" src="/img/buttons/veast.webp"></ImgButton>
 				<ImgButton href="https://www.mozilla.org/en-US/firefox/new/" src="/img/buttons/firefox.gif"
 				></ImgButton>
 				<ImgButton src="/img/buttons/lol.gif"></ImgButton>
 				<ImgButton src="/img/buttons/twopaws.png"></ImgButton>
+				<ImgButton src="/img/buttons/flag-gaymen.png"></ImgButton>
 			</div>
 		</div>
 	</div>
