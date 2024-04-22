@@ -11,6 +11,7 @@
 	<title>{title}</title>
 	<meta property="og:title" content={title} />
 	{#if bigImage.length}
+		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="og:thumbnail" content={$page.url.origin + bigImage} />
 	{:else}
 		<meta property="og:image" content={$page.url.origin + image} />
