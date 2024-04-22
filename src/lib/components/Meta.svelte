@@ -16,5 +16,7 @@
 	{:else}
 		<meta property="og:image" content={$page.url.origin + (image.length ? image : '/api/avatar')} />
 	{/if}
-	<meta property="og:description" content={descripton} />
+	{#if descripton.length}
+		<meta property="og:description" content={descripton} />
+	{/if}
 </svelte:head>
