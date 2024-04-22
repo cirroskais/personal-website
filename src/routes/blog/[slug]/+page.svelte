@@ -11,6 +11,8 @@
 
 	export let data;
 
+	import Meta from '$lib/components/Meta.svelte';
+
 	let markdown = '';
 	let thisPost = blog.find((post) => post.slug === data.slug);
 
@@ -30,9 +32,7 @@
 	});
 </script>
 
-<svelte:head>
-	<title>/{$page.data.discord?.username}/blog/{thisPost?.slug}</title>
-</svelte:head>
+<Meta title="{$page.data.discord?.username}/blog/{thisPost?.slug}" bigImage={thisPost?.image} />
 
 <div class="flex flex-col mx-auto space-y-2 max-w-[65ch]">
 	<div class="mx-auto w-full">

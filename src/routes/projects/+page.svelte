@@ -1,10 +1,13 @@
 <script>
 	import { page } from '$app/stores';
+
+	import Meta from '$lib/components/Meta.svelte';
 </script>
 
-<svelte:head>
-	<title>/{$page.data.discord?.username}/projects</title>
-</svelte:head>
+<Meta
+	title="{$page.data.discord?.username}/projects"
+	descripton="snow leopard that likes computers"
+/>
 
 <div class="flex w-full h-[calc(100vh-5.125rem)]">
 	<p class="m-auto text-2xl italic text-neutral-700">

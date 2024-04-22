@@ -1,6 +1,6 @@
 ## My Devices
 
-I currently own/administrate 3 devices. Here's there specs.
+I currently own/administrate 3 devices. Here's the specs.
 
 ### :archlinux: :windows10: Desktop (cirro-desktop)
 
