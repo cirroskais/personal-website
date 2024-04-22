@@ -16,7 +16,7 @@
 </script>
 
 <svelte:head>
-	<title>{$page.data.discord?.username}/home</title>
+	<title>/{$page.data.discord?.username}/home</title>
 </svelte:head>
 
 <div class="hero w-full h-[calc(100vh-5.125rem)] rounded-lg mx-auto my-auto">

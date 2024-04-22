@@ -36,11 +36,11 @@
 </script>
 
 <svelte:head>
-	<title>{$page.data.discord?.username}/blog</title>
+	<title>/{$page.data.discord?.username}/blog</title>
 </svelte:head>
 
 <div class="flex flex-col w-full">
-	<div class="flex flex-col my-auto space-y-7">
+	<div class="flex flex-col my-auto space-y-2">
 		<div class="grid gap-2 md:grid-rows-8 md:grid-cols-2 2xl:grid-cols-4 2xl:grid-rows-4">
 			{#key posts}
 				{#each posts as post, i}

@@ -7,5 +7,9 @@ export default {
 	typescript: '/img/emoji/typescript.svg',
 	bun: '/img/emoji/bun.svg',
 	nodejs: '/img/emoji/nodedotjs.svg',
-	coolify: '/img/emoji/coolify.png'
+	coolify: '/img/emoji/coolify.png',
+	archlinux: '/img/emoji/archlinux.svg',
+	windows10: '/img/emoji/windows10.svg',
+	apple: '/img/emoji/apple.svg',
+	ubuntu: '/img/emoji/ubuntu.svg'
 };

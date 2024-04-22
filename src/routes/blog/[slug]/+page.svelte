@@ -1,4 +1,5 @@
 <script>
+	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
 
@@ -29,11 +30,15 @@
 	});
 </script>
 
+<svelte:head>
+	<title>/{$page.data.discord?.username}/blog/{thisPost?.slug}</title>
+</svelte:head>
+
 <div class="flex flex-col mx-auto space-y-2 max-w-[65ch]">
 	<div class="mx-auto w-full">
 		<div
 			class="h-[10rem] w-full rounded-lg aspect-video bg-gray-500/10"
-			style="background-image: url({thisPost?.image});   
+			style="background-image: url({thisPost?.image});
             background-repeat: repeat;
             background-size: cover;"
 		>
