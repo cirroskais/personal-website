@@ -5,8 +5,10 @@
 
 <div class="h-full shadow-lg bg-gray-500/10">
 	<div class="container flex w-full h-full">
-		<a href="/" class="my-auto text-2xl font-bold tracking-wider">
-			<div class="h-full ml-[-1rem]">
+		<a href="/" class="my-auto text-2xl font-bold tracking-wider group">
+			<div
+				class="h-full ml-[-1rem] transition-all hover:scale-110 group-focus:scale-110 group-active:scale-90 group-active:-rotate-3"
+			>
 				<Cirro></Cirro>
 			</div>
 		</a>
