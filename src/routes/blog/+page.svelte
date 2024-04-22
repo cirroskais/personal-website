@@ -36,7 +36,7 @@
 	});
 </script>
 
-<Meta title="blog · cirroskais" descripton="snow leopard that likes computers" />
+<Meta title="blog · cirroskais" descripton="the best blog ever" />
 
 <div class="flex flex-col w-full">
 	<div class="flex flex-col my-auto space-y-2">
