@@ -86,6 +86,10 @@
 				<ImgButton src="/img/buttons/lol.gif"></ImgButton>
 				<ImgButton src="/img/buttons/twopaws.png"></ImgButton>
 				<ImgButton src="/img/buttons/flag-gaymen.png"></ImgButton>
+				<ImgButton
+					href="https://x.com/yeeeesnt/status/1784352830309937225"
+					src="/img/buttons/snowleopards.png"
+				></ImgButton>
 			</HeroContainer>
 		</div>
 	</div>
