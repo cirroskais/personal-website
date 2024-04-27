@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import config from '$lib/config';
 
+	import Meta from '$lib/components/Meta.svelte';
 	import SocialIcon from '$lib/components/Home/SocialIcon.svelte';
 	import HeroContainer from '$lib/components/Home/HeroContainer.svelte';
 	import ImgButton from '$lib/components/Home/Button.svelte';
@@ -15,9 +16,7 @@
 	import Bluesky from '$lib/components/Icons/Bluesky.svelte';
 </script>
 
-<svelte:head>
-	<title>{$page.data.discord?.username}/home</title>
-</svelte:head>
+<Meta title="home · cirroskais" descripton="snow leopard that likes computers" />
 
 <div class="hero w-full h-[calc(100vh-5.125rem)] rounded-lg mx-auto my-auto">
 	<div class="flex p-4 h-full rounded-lg">

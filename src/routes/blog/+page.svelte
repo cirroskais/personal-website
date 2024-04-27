@@ -3,6 +3,7 @@
 	import { page } from '$app/stores';
 	import blog from '$lib/blog';
 
+	import Meta from '$lib/components/Meta.svelte';
 	import ListedPost from '$lib/components/Blog/ListedPost.svelte';
 	import Back from '$lib/components/Icons/Back.svelte';
 	import Next from '$lib/components/Icons/Next.svelte';
@@ -35,12 +36,10 @@
 	});
 </script>
 
-<svelte:head>
-	<title>{$page.data.discord?.username}/blog</title>
-</svelte:head>
+<Meta title="blog · cirroskais" descripton="the best blog ever" />
 
 <div class="flex flex-col w-full">
-	<div class="flex flex-col my-auto space-y-7">
+	<div class="flex flex-col my-auto space-y-2">
 		<div class="grid gap-2 md:grid-rows-8 md:grid-cols-2 2xl:grid-cols-4 2xl:grid-rows-4">
 			{#key posts}
 				{#each posts as post, i}

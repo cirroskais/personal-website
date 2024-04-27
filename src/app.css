@@ -14,7 +14,7 @@ body {
 	font-style: normal;
 }
 
-//https://stackoverflow.com/questions/14068103/disable-antialising-when-scaling-images#14068216
+/* https://stackoverflow.com/questions/14068103/disable-antialising-when-scaling-images#14068216 */
 img {
 	image-rendering: optimizeSpeed; /* STOP SMOOTHING, GIVE ME SPEED  */
 	image-rendering: -moz-crisp-edges; /* Firefox                        */
