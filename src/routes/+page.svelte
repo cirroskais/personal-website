@@ -24,8 +24,7 @@
 			<HeroContainer>
 				<Image
 					style="mr-2 h-20 w-20 rounded-full md:h-24 md:w-24"
-					src="https://cdn.discordapp.com/avatars/{$page.data.discord.id}/{$page.data.discord
-						.avatar}.png"
+					src="/api/avatar"
 					alt="{$page.data.discord?.username}'s profile picture"
 				/>
 				<p class="my-auto text-3xl md:text-4xl text-neutral-300">
