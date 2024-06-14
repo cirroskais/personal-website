@@ -34,24 +34,36 @@
 			</HeroContainer>
 
 			<HeroContainer className="place-content-center space-x-2">
-				<SocialIcon href="https://www.last.fm/user/{config.LASTFM}" color="text-red-500">
-					<Lastfm />
-				</SocialIcon>
-				<SocialIcon href="https://github.com/{config.GITHUB}" color="text-black">
-					<GitHub />
-				</SocialIcon>
-				<SocialIcon href={config.FEDIVERSE} color="text-indigo-700">
-					<Mastodon />
-				</SocialIcon>
-				<SocialIcon href="https://discord.com/users/{config.DISCORD}" color="text-blue-600">
-					<Discord />
-				</SocialIcon>
-				<SocialIcon href="https://x.com/{config.TWITTER}" color="text-black">
-					<X />
-				</SocialIcon>
-				<SocialIcon href="https://bsky.app/profile/{config.BLUESKY}" color="text-blue-400">
-					<Bluesky />
-				</SocialIcon>
+				{#if config.LASTFM}
+					<SocialIcon href="https://www.last.fm/user/{config.LASTFM}" color="text-red-500">
+						<Lastfm />
+					</SocialIcon>
+				{/if}
+				{#if config.GITHUB}
+					<SocialIcon href="https://github.com/{config.GITHUB}" color="text-black">
+						<GitHub />
+					</SocialIcon>
+				{/if}
+				{#if config.FEDIVERSE}
+					<SocialIcon href="https://{config.FEDIVERSE}" color="text-indigo-700">
+						<Mastodon />
+					</SocialIcon>
+				{/if}
+				{#if config.DISCORD}
+					<SocialIcon href="https://discord.com/users/{config.DISCORD}" color="text-blue-600">
+						<Discord />
+					</SocialIcon>
+				{/if}
+				{#if config.TWITTER}
+					<SocialIcon href="https://x.com/{config.TWITTER}" color="text-black">
+						<X />
+					</SocialIcon>
+				{/if}
+				{#if config.BLUESKY}
+					<SocialIcon href="https://bsky.app/profile/{config.BLUESKY}" color="text-blue-400">
+						<Bluesky />
+					</SocialIcon>
+				{/if}
 			</HeroContainer>
 
 			<HeroContainer>
