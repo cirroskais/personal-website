@@ -6,6 +6,7 @@
 	import TailwindCSS from './Icons/TailwindCSS.svelte';
 	import Heart from './Icons/Heart.svelte';
 	import Forgejo from './Icons/Forgejo.svelte';
+	import GitHub from './Icons/GitHub.svelte';
 </script>
 
 <div class="flex py-2 w-full h-full shadow-lg bg-gray-500/10">
@@ -21,13 +22,13 @@
 				</p>
 			</div>
 			<div class="hidden space-x-0.5 md:flex">
-				<div class="my-auto w-5 h-5 font-bold">
-					<Forgejo></Forgejo>
+				<div class="my-auto mr-0.5 w-5 h-5 font-bold">
+					<GitHub></GitHub>
 				</div>
 				<p>
 					View the source on <a
 						class="font-bold"
-						href="https://git.madhouselabs.net/cirroskais/personal-website">Forgejo</a
+						href="https://github.com/cirroskais/personal-website">GitHub</a
 					>.
 				</p>
 			</div>
