@@ -28,7 +28,9 @@ export async function POST({ request }) {
 	});
 	tabsData.set(data);
 
-	return new Response('OK');
+	return new Response('OK', {
+		headers: { 'Access-Control-Allow-Origin': '*' }
+	});
 }
 
 /** @type { import("./$types").RequestHandler } */
