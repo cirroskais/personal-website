@@ -101,9 +101,11 @@
 						<Monitor></Monitor>
 						<p class="inline-block my-auto text-lg whitespace-nowrap">
 							{#if Date.now() - $page.data?.tabsData.desktop.lastSeen > 600000}
-								Offline
+								0 tabs
 							{:else}
-								{$page.data?.tabsData.desktop.tabs} tabs
+								{$page.data?.tabsData.desktop.tabs} tab{$page.data?.tabsData.desktop.tabs === 1
+									? ''
+									: 's'}
 							{/if}
 						</p>
 					</div>
@@ -111,9 +113,11 @@
 						<Laptop></Laptop>
 						<p class="inline-block my-auto text-lg whitespace-nowrap">
 							{#if Date.now() - $page.data?.tabsData.laptop.lastSeen > 600000}
-								Offline
+								0 tabs
 							{:else}
-								{$page.data?.tabsData.laptop.tabs} tabs
+								{$page.data?.tabsData.laptop.tabs} tab{$page.data?.tabsData.laptop.tabs === 1
+									? ''
+									: 's'}
 							{/if}
 						</p>
 					</div>
@@ -121,9 +125,11 @@
 						<Smartphone></Smartphone>
 						<p class="inline-block my-auto text-lg whitespace-nowrap">
 							{#if Date.now() - $page.data?.tabsData.phone.lastSeen > 600000}
-								Offline
+								0 tabs
 							{:else}
-								{$page.data?.tabsData.phone.tabs} tabs
+								{$page.data?.tabsData.phone.tabs} tab{$page.data?.tabsData.phone.tabs === 1
+									? ''
+									: 's'}
 							{/if}
 						</p>
 					</div>
