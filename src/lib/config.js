@@ -3,6 +3,6 @@ export default {
 	LASTFM: 'RAAAAAAAAAAAH',
 	BLUESKY: false, // 'cirroskais.xyz'
 	TWITTER: '@cirroskais',
-	FEDIVERSE: false, // 'chadthundercock.com/@cirroskais'
+	FEDIVERSE: 'chadthundercock.com/@cirro',
 	GITHUB: 'cirroskais'
 };
