@@ -23,6 +23,7 @@ interface LastFMImage {
 interface LastFMTrack {
 	image: Array<LastFMImage>;
 	name: string;
+	url: string;
 	artist: {
 		'#text': string;
 	};
@@ -34,15 +35,28 @@ interface LastFM {
 	};
 }
 
+interface DeviceData {
+	tabs: number;
+	windows?: number;
+	lastSeen: number;
+}
+
+interface TabsData {
+	desktop: DeviceData;
+	laptop: DeviceData;
+	phone: DeviceData;
+}
+
 declare global {
 	namespace App {
 		// interface Error {}
 		// interface Locals {}
 		interface PageData {
 			posts?: Array<PostsObject>;
-			discord: Discord;
-			lastfm: LastFM;
-			counter: number;
+			discord?: Discord;
+			lastfm?: LastFM;
+			counter?: number;
+			tabsData: TabsData;
 		}
 		// interface PageState {}
 		// interface Platform {}

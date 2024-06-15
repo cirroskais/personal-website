@@ -2,6 +2,8 @@
 	import { page } from '$app/stores';
 	import config from '$lib/config';
 
+	import { get } from 'svelte/store';
+
 	import Meta from '$lib/components/Meta.svelte';
 	import SocialIcon from '$lib/components/Home/SocialIcon.svelte';
 	import HeroContainer from '$lib/components/Home/HeroContainer.svelte';
@@ -14,6 +16,9 @@
 	import Mastodon from '$lib/components/Icons/Mastodon.svelte';
 	import X from '$lib/components/Icons/X.svelte';
 	import Bluesky from '$lib/components/Icons/Bluesky.svelte';
+	import Monitor from '$lib/components/Icons/Monitor.svelte';
+	import Laptop from '$lib/components/Icons/Laptop.svelte';
+	import Smartphone from '$lib/components/Icons/Smartphone.svelte';
 </script>
 
 <Meta title="home · cirroskais" descripton="snow leopard that likes computers" />
@@ -65,25 +70,65 @@
 				{/if}
 			</HeroContainer>
 
-			<HeroContainer>
-				<div class="flex space-x-2.5">
-					<Image
-						style="w-16 h-16 md:w-24 md:h-24"
-						src={$page.data.lastfm.recenttracks.track[0].image.find(
-							(_) => _.size == 'extralarge'
-						)?.['#text']}
-						alt="Album art for {$page.data.lastfm?.recenttracks?.track[0]?.name}"
-					/>
-					<div class="overflow-x-auto my-auto">
-						<p class="text-lg whitespace-nowrap md:text-2xl text-neutral-300">
-							{$page.data.lastfm?.recenttracks?.track[0]?.name}
-						</p>
-						<p class="md:text-xl text-neutral-500">
-							{$page.data.lastfm?.recenttracks?.track[0]?.artist?.['#text']}
+			<div class="flex gap-1">
+				<HeroContainer className="md:w-min flex-grow">
+					{#if $page.data.lastfm}
+						<a
+							href={$page.data.lastfm.recenttracks.track[0].url}
+							target="_blank"
+							class="flex space-x-2.5"
+						>
+							<Image
+								style="w-16 h-16 md:w-24 md:h-24"
+								src={$page.data.lastfm.recenttracks.track[0].image.find(
+									(_) => _.size == 'extralarge'
+								)?.['#text']}
+								alt="Album art for {$page.data.lastfm?.recenttracks?.track[0]?.name}"
+							/>
+							<div class="overflow-x-auto my-auto">
+								<p class="text-lg whitespace-nowrap md:text-2xl text-neutral-300">
+									{$page.data.lastfm?.recenttracks?.track[0]?.name}
+								</p>
+								<p class="md:text-xl text-neutral-500">
+									{$page.data.lastfm?.recenttracks?.track[0]?.artist?.['#text']}
+								</p>
+							</div>
+						</a>
+					{/if}
+				</HeroContainer>
+				<HeroContainer className="md:w-min flex-col place-content-around text-neutral-400 px-5">
+					<div class="flex gap-1.5">
+						<Monitor></Monitor>
+						<p class="inline-block my-auto text-lg whitespace-nowrap">
+							{#if Date.now() - $page.data?.tabsData.desktop.lastSeen > 600000}
+								Offline
+							{:else}
+								{$page.data?.tabsData.desktop.tabs} tabs
+							{/if}
 						</p>
 					</div>
-				</div>
-			</HeroContainer>
+					<div class="flex gap-1.5">
+						<Laptop></Laptop>
+						<p class="inline-block my-auto text-lg whitespace-nowrap">
+							{#if Date.now() - $page.data?.tabsData.laptop.lastSeen > 600000}
+								Offline
+							{:else}
+								{$page.data?.tabsData.laptop.tabs} tabs
+							{/if}
+						</p>
+					</div>
+					<div class="flex gap-1.5">
+						<Smartphone></Smartphone>
+						<p class="inline-block my-auto text-lg whitespace-nowrap">
+							{#if Date.now() - $page.data?.tabsData.phone.lastSeen > 600000}
+								Offline
+							{:else}
+								{$page.data?.tabsData.phone.tabs} tabs
+							{/if}
+						</p>
+					</div>
+				</HeroContainer>
+			</div>
 
 			<HeroContainer className="justify-center flex-wrap gap-2 ">
 				<ImgButton href="https://cirroskais.xyz" src="/img/buttons/cirro.png"></ImgButton>
