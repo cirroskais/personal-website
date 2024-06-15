@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-	<link href={config.FEDIVERSE} rel="me" />
+	<link href="https://{config.FEDIVERSE}" rel="me" />
 	<link rel="icon" type="image/png" href={$page.url.origin + '/api/avatar'} />
 	<meta property="og:url" content={$page.url.toString()} />
 	<meta property="og:site_name" content={$page.url.hostname} />
