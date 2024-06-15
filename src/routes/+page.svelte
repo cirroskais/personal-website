@@ -140,6 +140,8 @@
 				<ImgButton href="https://cirroskais.xyz" src="/img/buttons/cirro.png"></ImgButton>
 				<ImgButton href="https://twitter.com/Porpss1" src="/img/buttons/rovin.png"></ImgButton>
 				<ImgButton href="https://split.pet" src="/img/buttons/split.png"></ImgButton>
+				<ImgButton href="https://tabs.split.pet" src="https://tabs.split.pet/button.svg"
+				></ImgButton>
 				<ImgButton href="https://m1cro.xyz/" src="/img/buttons/micro.png"></ImgButton>
 				<ImgButton href="https://vea.st/" src="/img/buttons/veast.png"></ImgButton>
 				<ImgButton href="https://liloandstit.ch/" src="/img/buttons/stitch.png"></ImgButton>
