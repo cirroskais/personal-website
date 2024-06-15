@@ -96,7 +96,7 @@
 						</a>
 					{/if}
 				</HeroContainer>
-				<HeroContainer className="md:w-min flex-col place-content-around text-neutral-400 px-5">
+				<HeroContainer className="md:w-min flex-col place-content-around text-neutral-400 px-3">
 					<div class="flex gap-1.5">
 						<Monitor></Monitor>
 						<p class="inline-block my-auto text-lg whitespace-nowrap">
