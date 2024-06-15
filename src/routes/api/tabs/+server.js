@@ -1,7 +1,7 @@
-import { TABCOUNTER_KEY } from '$env/static/private';
 import { error, json } from '@sveltejs/kit';
 import { tabsData } from '$lib';
 import { get } from 'svelte/store';
+import { devices } from '$lib/server/tabs';
 
 /** @type { import("./$types").RequestHandler } */
 export function OPTIONS() {
@@ -19,9 +19,14 @@ export function OPTIONS() {
 export async function POST({ request }) {
 	const body = await request.json();
 	const key = request.headers.get('Authorization');
-	if (key !== TABCOUNTER_KEY) return error(401);
+	const device = devices.find((_) => _.key === key)?.name;
+	if (!device) error(401);
 
-	tabsData.set(body);
+	let data = get(tabsData);
+	Object.assign(data, {
+		[device]: { ...body, lastSeen: Date.now() }
+	});
+	tabsData.set(data);
 
 	return new Response('OK');
 }
