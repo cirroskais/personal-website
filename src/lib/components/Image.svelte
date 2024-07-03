@@ -26,7 +26,7 @@
 </script>
 
 {#if loaded}
-	<img in:fade class={style} {src} {alt} bind:this={image} />
+	<img in:fade={{ duration: 350 }} class={style} {src} {alt} bind:this={image} />
 {:else}
-	<div class="{style} bg-neutral-600/50 animate-pulse"></div>
+	<div class={style}></div>
 {/if}

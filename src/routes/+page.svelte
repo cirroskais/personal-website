@@ -17,6 +17,7 @@
 	import Monitor from '$lib/components/Icons/Monitor.svelte';
 	import Laptop from '$lib/components/Icons/Laptop.svelte';
 	import Smartphone from '$lib/components/Icons/Smartphone.svelte';
+	import { fade } from 'svelte/transition';
 </script>
 
 <Meta title="home · cirroskais" descripton="snow leopard that likes computers" />
@@ -81,10 +82,16 @@
 									alt="Album art for {lastfm?.recenttracks?.track[0]?.name}"
 								/>
 								<div class="overflow-x-auto my-auto">
-									<p class="text-lg whitespace-nowrap md:text-2xl text-neutral-300">
+									<p
+										class="text-lg whitespace-nowrap md:text-2xl text-neutral-300"
+										in:fade|global={{ delay: 350 * 1, duration: 350 }}
+									>
 										{lastfm?.recenttracks?.track[0]?.name}
 									</p>
-									<p class="md:text-xl text-neutral-500">
+									<p
+										class="md:text-xl text-neutral-500"
+										in:fade|global={{ delay: 350 * 2, duration: 350 }}
+									>
 										{lastfm?.recenttracks?.track[0]?.artist?.['#text']}
 									</p>
 								</div>
