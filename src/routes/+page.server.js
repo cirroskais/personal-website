@@ -3,9 +3,9 @@ import lastfm from '$lib/server/lastfm';
 import { get } from 'svelte/store';
 
 /** @type {import("./$types").LayoutServerLoad} */
-export async function load() {
+export function load() {
 	return {
-		lastfm: await lastfm(),
+		lastfm: lastfm(),
 		tabsData: get(tabsData)
 	};
 }

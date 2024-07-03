@@ -2,8 +2,6 @@
 	import { page } from '$app/stores';
 	import config from '$lib/config';
 
-	import { get } from 'svelte/store';
-
 	import Meta from '$lib/components/Meta.svelte';
 	import SocialIcon from '$lib/components/Home/SocialIcon.svelte';
 	import HeroContainer from '$lib/components/Home/HeroContainer.svelte';
@@ -70,31 +68,29 @@
 				{/if}
 			</HeroContainer>
 
-			<div class="flex gap-1">
+			<div class="flex gap-1 h-28">
 				<HeroContainer className="md:w-min flex-grow">
-					{#if $page.data.lastfm}
-						<a
-							href={$page.data.lastfm.recenttracks.track[0].url}
-							target="_blank"
-							class="flex space-x-2.5"
-						>
-							<Image
-								style="w-16 h-16 md:w-24 md:h-24"
-								src={$page.data.lastfm.recenttracks.track[0].image.find(
-									(_) => _.size == 'extralarge'
-								)?.['#text']}
-								alt="Album art for {$page.data.lastfm?.recenttracks?.track[0]?.name}"
-							/>
-							<div class="overflow-x-auto my-auto">
-								<p class="text-lg whitespace-nowrap md:text-2xl text-neutral-300">
-									{$page.data.lastfm?.recenttracks?.track[0]?.name}
-								</p>
-								<p class="md:text-xl text-neutral-500">
-									{$page.data.lastfm?.recenttracks?.track[0]?.artist?.['#text']}
-								</p>
-							</div>
-						</a>
-					{/if}
+					{#await $page.data.lastfm then lastfm}
+						{#if lastfm}
+							<a href={lastfm.recenttracks.track[0].url} target="_blank" class="flex space-x-2.5">
+								<Image
+									style="w-16 h-16 md:w-24 md:h-24"
+									src={lastfm.recenttracks.track[0].image.find((_) => _.size == 'extralarge')?.[
+										'#text'
+									]}
+									alt="Album art for {lastfm?.recenttracks?.track[0]?.name}"
+								/>
+								<div class="overflow-x-auto my-auto">
+									<p class="text-lg whitespace-nowrap md:text-2xl text-neutral-300">
+										{lastfm?.recenttracks?.track[0]?.name}
+									</p>
+									<p class="md:text-xl text-neutral-500">
+										{lastfm?.recenttracks?.track[0]?.artist?.['#text']}
+									</p>
+								</div>
+							</a>
+						{/if}
+					{/await}
 				</HeroContainer>
 				<HeroContainer className="md:w-min flex-col place-content-around text-neutral-400 px-3">
 					<div class="flex gap-1.5">

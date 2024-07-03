@@ -54,7 +54,7 @@ declare global {
 		interface PageData {
 			posts?: Array<PostsObject>;
 			discord?: Discord;
-			lastfm?: LastFM;
+			lastfm?: Promise<LastFM>;
 			counter?: number;
 			tabsData: TabsData;
 		}
