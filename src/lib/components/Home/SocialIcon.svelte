@@ -1,12 +1,10 @@
 <script>
 	export let href = '',
-		color = '';
+		className = '';
 </script>
 
 <a class="flex text-xl group" {href}>
-	<div
-		class="my-auto w-7 h-7 transition-colors text-neutral-400 group-hover:{color} group-focus:{color}"
-	>
+	<div class="my-auto w-7 h-7 transition-colors text-neutral-400 {className}">
 		<slot />
 	</div></a
 >

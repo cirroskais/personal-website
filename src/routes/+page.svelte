@@ -38,12 +38,18 @@
 
 			<HeroContainer className="place-content-center space-x-2">
 				{#if config.LASTFM}
-					<SocialIcon href="https://www.last.fm/user/{config.LASTFM}" color="text-red-500">
+					<SocialIcon
+						href="https://www.last.fm/user/{config.LASTFM}"
+						className="group-hover:text-red-500 group-focus:text-red-500"
+					>
 						<Lastfm />
 					</SocialIcon>
 				{/if}
 				{#if config.GITHUB}
-					<SocialIcon href="https://github.com/{config.GITHUB}" color="text-black">
+					<SocialIcon
+						href="https://github.com/{config.GITHUB}"
+						className="group-hover:text-black group-focus:text-black"
+					>
 						<GitHub />
 					</SocialIcon>
 				{/if}
