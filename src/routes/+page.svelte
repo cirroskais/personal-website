@@ -54,22 +54,34 @@
 					</SocialIcon>
 				{/if}
 				{#if config.FEDIVERSE}
-					<SocialIcon href="https://{config.FEDIVERSE}" color="text-indigo-700">
+					<SocialIcon
+						href="https://{config.FEDIVERSE}"
+						className="group-hover:text-indigo-700 group-focus:text-indigo-700"
+					>
 						<Mastodon />
 					</SocialIcon>
 				{/if}
 				{#if config.DISCORD}
-					<SocialIcon href="https://discord.com/users/{config.DISCORD}" color="text-blue-600">
+					<SocialIcon
+						href="https://discord.com/users/{config.DISCORD}"
+						className="group-hover:text-blue-600 group-focus:text-blue-600"
+					>
 						<Discord />
 					</SocialIcon>
 				{/if}
 				{#if config.TWITTER}
-					<SocialIcon href="https://x.com/{config.TWITTER}" color="text-black">
+					<SocialIcon
+						href="https://x.com/{config.TWITTER}"
+						className="group-hover:text-black group-focus:text-black"
+					>
 						<X />
 					</SocialIcon>
 				{/if}
 				{#if config.BLUESKY}
-					<SocialIcon href="https://bsky.app/profile/{config.BLUESKY}" color="text-blue-400">
+					<SocialIcon
+						href="https://bsky.app/profile/{config.BLUESKY}"
+						className="group-hover:text-blue-400 group-focus:text-blue-400"
+					>
 						<Bluesky />
 					</SocialIcon>
 				{/if}
