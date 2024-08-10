@@ -1,6 +1,6 @@
 ## Introduction
 
-Hello, I'm cirro! I'm 17, go by he/they, and like computers. I co-own MadHouse Labs, a developer conglomerate and friend group with over 70 members. I'm also a web designer, backend developer, and ~~pretend~~ sysadmin.
+Hello, I'm cirro! I'm 18, go by he/they, and like computers. I co-own MadHouse Labs, a developer conglomerate and friend group with over 70 members. I'm also a web designer, backend developer, and ~~pretend~~ sysadmin.
 
 <em><span style="color: #c4bef3;">I love my boyfriend, too. You can't have him. He's mine.</span></em>
 

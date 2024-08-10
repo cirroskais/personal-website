@@ -1,10 +1,9 @@
-## My Devices
+###
 
-I currently own/administrate 3 devices. Here's their specs.
-
-### :archlinux: :windows10: Desktop (cirro-desktop)
+### :archlinux: :windows10: Desktop
 
 - OS: Arch Linux / Windows 10
+- Hostname: cirro-desktop
 - Shell: bash
 - WM: i3
 - Terminal: alacritty
@@ -12,17 +11,27 @@ I currently own/administrate 3 devices. Here's their specs.
 - GPU: NVIDIA GeForce RTX 2070 SUPER
 - Memory: 16 GB
 
-### :apple: Laptop (cirro-laptop)
+### :archlinux: Dell Latitude 5420
 
-- OS: macOS 12.7.3
-- Shell: zsh
-- CPU: Intel i5-5257U @ 2.700GHz
-- GPU: Intel Iris Graphics 6100
+- OS: Arch Linux
+- Hostname: cirro-latitude
+- Shell: bash
+- WM: Hyprland
+- Terminal: alacritty
+- CPU: Intel i5-1145G7 @ 4.400GHz
 - Memory: 8 GB
 
-### :ubuntu: Server (gungus)
+### :apple: MacBook Pro (Retina, 13-inch, Early 2015)
+
+- OS: macOS Monterey 12.7.3
+- Hostname: cirro-macbook
+- Shell: zsh
+- CPU: Intel i5-5257U @ 2.700GHz
+- Memory: 8 GB
+
+### :ubuntu: Server
 
 - OS: Ubuntu 22.04.4 LTS
+- Hostname: gungus
 - CPU: Intel Xeon E-2288G @ 5.000GHz
-- GPU: None
 - Memory: 128 GB
