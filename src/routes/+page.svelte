@@ -99,9 +99,9 @@
 									]}
 									alt="Album art for {lastfm?.recenttracks?.track[0]?.name}"
 								/>
-								<div class="overflow-x-auto my-auto">
+								<div class="overflow-hidden my-auto">
 									<p
-										class="text-lg whitespace-nowrap md:text-2xl text-neutral-300"
+										class="text-lg overflow-ellipsis line-clamp-2 md:text-2xl text-neutral-300"
 										in:fade|global={{ delay: 350 * 1, duration: 350 }}
 									>
 										{lastfm?.recenttracks?.track[0]?.name}
